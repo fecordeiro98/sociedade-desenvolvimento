@@ -13,9 +13,7 @@ dados <- read_excel('grupo2_entrega2_dados-brutos.xlsx', na = '')
 
 ## Transformação das colunas em fatores ----
 dados <- dados |> mutate(
-  across(
-    where(is.character), as.factor
-  )
+  across(where(is.character), as.factor)
 )
 
 # Análises ----------------------------------------------------------------
@@ -36,6 +34,7 @@ fisher.test(table(dados$sexo, dados$policiamento)) # Sexo vs. policiamento
 fisher.test(table(dados$sexo, dados$ponto)) # Sexo vs. ponto
 fisher.test(table(dados$sexo, dados$ponto_assedio)) # Sexo vs. assédio no ponto
 fisher.test(table(dados$sexo, dados$ponto_avaliacao)) # Sexo vs. avaliação
+fisher.test(table(dados$sexo, dados$ponto_frequencia)) # Sexo vs. frequência
 fisher.test(table(dados$sexo, dados$ponto_preferencia)) # Sexo vs. preferência
 fisher.test(table(dados$sexo, dados$ponto_seguranca)) # Sexo vs. segurança
 fisher.test(table(dados$sexo, dados$reclamacao)) # Sexo vs. reclamação
