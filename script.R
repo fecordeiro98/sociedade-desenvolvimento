@@ -5,11 +5,10 @@
 # Primeiros passos --------------------------------------------------------
 
 ## Bibliotecas ----
-library(readxl) # 1.4.5
 library(tidyverse) # 2.0.0
 
 ## Importação dos dados ----
-dados <- read_excel('grupo2_entrega2_dados-brutos.xlsx', na = '')
+dados <- read.csv('dados.csv', header = T, sep = ';', na.strings = '')
 
 ## Transformação das colunas em fatores ----
 dados <- dados |> mutate(
