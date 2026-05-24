@@ -5,6 +5,7 @@
 # Primeiros passos --------------------------------------------------------
 
 ## Bibliotecas ----
+library(readxl) # 1.4.5
 library(tidyverse) # 2.0.0
 
 ## Importação dos dados ----
