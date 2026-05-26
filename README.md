@@ -29,7 +29,8 @@ Uma etapa crucial realizada é a conversão de todas as colunas de texto (charac
 
 ### 2. Análise de variáveis qualitativas
 Para entender a relação entre o sexo dos entrevistados e as demais variáveis qualitativas (como percepção de iluminação, segurança e ocorrência de assédio), o script utiliza o Teste Exato de Fisher (`fisher.test`). 
-> Nota: O teste de Fisher foi escolhido por ser adequado para analisar tabelas de contingência, especialmente quando as frequências esperadas em algumas categorias podem ser baixas.
+> [!NOTE]
+> O teste de Fisher foi escolhido por ser adequado para analisar tabelas de contingência, especialmente quando as frequências esperadas em algumas categorias podem ser baixas.
 
 ### 3. Análise de variáveis quantitativas
 Para analisar a variável numérica tempo de espera (`espera`), o script utiliza a Análise de Variância (ANOVA) (`aov`). O objetivo é verificar se existem diferenças estatisticamente significativas na média de espera com base em:
