@@ -9,7 +9,7 @@ library(readxl) # 1.4.5
 library(tidyverse) # 2.0.0
 
 ## Importação dos dados ----
-dados <- read.csv('dados.csv', header = T, sep = ';', na.strings = '')
+dados <- read.csv('dados.csv', header = T, sep = ',', na.strings = '')
 
 ## Transformação das colunas em fatores ----
 dados <- dados |> mutate(
